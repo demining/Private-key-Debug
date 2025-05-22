@@ -13,6 +13,15 @@
 <p>This paper analyzes cryptographic vulnerabilities related to incorrect generation of private keys in blockchain systems. One of the key issues is the incorrect calculation of the constant N, which determines the order of the group of points of the elliptic curve secp256k1, which can lead to the generation of invalid keys. This poses a serious security threat, since invalid keys can cause errors when signing transactions and make them vulnerable to attacks such as private key recovery through repeated generations&nbsp;<a href="https://dustattack.org/birthday-paradox/" target="_blank" rel="noreferrer noopener">(Birthday Paradox)</a>&nbsp;.</p>
 
 
+---
+
+* Tutorial: https://youtu.be/0m9goH8Lpa0
+* Tutorial: https://cryptodeeptech.ru/private-key-debug
+* Tutorial: https://dzen.ru/video/watch/682ec3767299977a8bc27069
+* Google Colab: https://colab.research.google.com/drive/1eaKZitRzN8034hIwivLNSawobDpcmoEm
+
+---
+
 
 <p>Incorrectly setting the curve parameters, in particular the constant N, can result in generated keys being outside the allowed range, making the validity check of the keys ineffective. This breaks compatibility with the Bitcoin network and can lead to loss of funds when using compromised private keys.</p>
 
